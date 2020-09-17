@@ -37,7 +37,7 @@ function doit () {
 	})
 	
 	if(i++ > 10) return
-	setTimeout(doit, 6000000);
+	setTimeout(doit, 600000);
 }
 
 console.log("ready")
