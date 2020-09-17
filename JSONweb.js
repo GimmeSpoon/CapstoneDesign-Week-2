@@ -8,7 +8,7 @@ app.get('/update', (req, res) => {
   
   res.send('Data Accepted');
   fs.readFile(path,function(err,data){if(err){console.error(err);}var weather = JSON.parse(data);addData(req.query.temp,weather)});
-  console.log(req.query.temp);
+  console.log(req.query);
   
 })
 
